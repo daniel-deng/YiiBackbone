@@ -7,8 +7,8 @@ $paramsLocal = file_exists($configRoot.'/params-local.php') ? require($configRoo
 
 return CMap::mergeArray(array(
 	// Some default parameters can be here (they may be overwritten in $frontendParamsLocal
-	'db.username' => '',
+	'db.username' => 'root',
 	'db.password' => '',
-	'db.name'     => '',
+	'db.name'     => 'yiibackbone',
 	'db.host'     => 'localhost',
 ), $paramsLocal);
